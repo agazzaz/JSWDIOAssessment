@@ -6,7 +6,7 @@ Prerequisites to setup project
 * install an IDE (VS Code)
 
 Steps to run the code
-* clone the reporsitory - git clone https://github.com/surangaa/BookingAutomationProject.git
+* clone the reporsitory - git clone https://github.com/agazzaz/JSWDIOAssessment.git
 * Open the project in IDE
 * run a 'npm install' to install all the dependencies
 * To run the test -> npx wdio run wdio.conf.js

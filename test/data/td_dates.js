@@ -1,6 +1,6 @@
-let dates = {
-    checkIn: "2023-07-21",
-    checkOut: "2023-07-23"
+const dates = {
+    checkIn: "2023-08-22",
+    checkOut: "2023-08-24"
    }
    
-   export default dates
+module.exports = dates;

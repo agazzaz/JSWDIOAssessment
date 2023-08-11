@@ -9,7 +9,8 @@ Steps to run the code
 * clone the reporsitory - git clone https://github.com/agazzaz/JSWDIOAssessment.git
 * Open the project in IDE
 * run a 'npm install' to install all the dependencies
-* To run the test -> npx wdio run wdio.conf.js
+* To run the test and generate report > go to command line (not powershell) -> npm run test 
+* To run the test and without report > go to command line (not powershell) -> npx wdio run wdio.conf.js
 
 Issues faced
 * Difficulties in identified elements which were not straighforward. 

@@ -1,6 +1,6 @@
 class PGSearchPage {
     get tf_Location() {
-      return $("//input[@id=':Ra9:']");
+      return $("//input[@id=':rc:']");
     }
   
     get dd_Location() {
@@ -33,7 +33,8 @@ class PGSearchPage {
     }
   
     get chk_StarRate() {
-      return $("//input[@id=':Rlf94q:']");
+      return $('//div[@data-filters-item="class:class=5"]');
+      
     }
   
     get btn_SortBy() {
@@ -63,5 +64,4 @@ class PGSearchPage {
   
   }
   
-//   export default new PGSearchPage();
 module.exports = new PGSearchPage();

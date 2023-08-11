@@ -27,11 +27,10 @@ class search {
     //select checkout date
     await SearchPage.btn_CheckoutDate(outDay);
 
-    //get and store selected checkin and checkout dates
-    let passDates = await this.bc_GetDates();
-    return passDates;
+    // //get and store selected checkin and checkout dates
+    // let passDates = await this.bc_GetDates();
+    // return passDates;
   }
-
   async bc_SelectAdultChildCount() {
     //click on dropdown button
     await SearchPage.tf_AdultChildCount.click();
@@ -51,16 +50,6 @@ class search {
   async bc_ClickSearch() {
     //click serach button
     await SearchPage.btn_Search.click();
-  }
-
-  async bc_VerifyLocation(prm_Location) {
-    let locationValue = await SearchPage.tf_LocationSearch.getValue();
-
-    //get the stored location
-    let locationPassed =  prm_Location;
-
-    //verify location
-    await expect(locationValue).toEqual(locationPassed);
   }
 
   async bc_SelectRating() {
@@ -91,7 +80,7 @@ class search {
     let checkOutDate = await SearchPage.btn_SelectedCheckoutDate.getText();
     return { checkInDate, checkOutDate };
   }
+
 }
 
-// export default new Search();
 module.exports = new search();

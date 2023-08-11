@@ -1,4 +1,3 @@
-// import home from "../pages/pg_home.js"
 const homepage = require ("../pages/pg_home.js");
 
 class home {
@@ -43,5 +42,4 @@ class home {
   }
 }
 
-// export default new home();
 module.exports = new home();

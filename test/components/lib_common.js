@@ -11,6 +11,4 @@ class common {
     }
   }
   
-  // export default new common();
-  // module.exports = common;
   module.exports = new common();

@@ -36,5 +36,4 @@ class PGHomePage {
 
 }
 
-// export default new PGHomePage();
 module.exports = new PGHomePage();

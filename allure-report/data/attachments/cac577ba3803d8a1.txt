@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": ".//button[contains(., \"United States Dollar\") and not(.//button)]"
+}

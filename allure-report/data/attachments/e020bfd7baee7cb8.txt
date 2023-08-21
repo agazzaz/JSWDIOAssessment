@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "td span[data-date=\"2023-08-22\"]"
+}

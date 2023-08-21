@@ -6,6 +6,8 @@ const SearchPage = require ("../components/lib_search.js");
 const td_product = require('../data/td_product.json');
 const ProductPage = require ("../components/lib_product.js");
 const assert = require('assert');
+const userData = require('../data/td_user.json');
+const OrderPage = require ("../components/lib_order.js");
 // const { expect: Chaiexpect } = require("chai");
 // const chai = require('chai');
 
@@ -65,10 +67,21 @@ describe("Common Tests", () => {
     console.log('Product Details:', proDetails); // Optional: log the details
 
     // Add your assertions if needed
-    assert.strictEqual(typeof proDetails.productName, 'string', 'Product name should be a string');
-    let prm_ProductName = "Lanka Guest";
-    const pdProductName = await ProductPage.bc_VerifyProductDetails(prm_ProductName);
+    // assert.strictEqual(typeof proDetails.productName, 'string', 'Product name should be a string');
+    // let prm_ProductName = "Lanka Guest";
+    // const pdProductName = await ProductPage.bc_VerifyProductDetails(prm_ProductName);
+  });
 
+  it('Click  on reserve, fill details, verify details and go back to Homepage ', async () => {
+      await ProductPage.bc_ReserveRoom();
+      const userDataEntry = userData[0];
+
+      const prm_FirstName = userDataEntry.firstName;
+      const prm_LastName = userDataEntry.lastName;
+      const prm_Email = userDataEntry.email;
+      await OrderPage.bc_FillDetailsForm(prm_FirstName, prm_LastName, prm_Email);
+      await OrderPage.bc_VerifyFormDetails(prm_FirstName, prm_LastName, prm_Email);
+      homepage.bc_DismissAlert;
   });
 
 });

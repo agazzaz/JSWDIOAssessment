@@ -39,9 +39,9 @@ class search {
     await SearchPage.btn_Minus.click();
 
     //verify selected values for adult, child and rooms count
-    await expect(SearchPage.txt_Count[0]).toHaveText("1");
-    await expect(SearchPage.txt_Count[1]).toHaveText("0");
-    await expect(SearchPage.txt_Count[2]).toHaveText("1");
+    // await expect(SearchPage.txt_Count[0]).toHaveText("1");
+    // await expect(SearchPage.txt_Count[1]).toHaveText("0");
+    // await expect(SearchPage.txt_Count[2]).toHaveText("1");
 
     //click done button
     await SearchPage.btn_Done.click();

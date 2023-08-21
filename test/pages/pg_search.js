@@ -1,6 +1,6 @@
 class PGSearchPage {
     get tf_Location() {
-      return $("//input[@id=':rc:']");
+      return $("//input[@id=':re:']");
     }
   
     get dd_Location() {
@@ -21,7 +21,9 @@ class PGSearchPage {
     }
   
     get btn_Minus() {
-      return $("//div[contains(@class, 'e98c626f34')]//button[1]");
+      return $("//div[contains(@class, 'bfb38641b0')]//button[1]");
+      // return $("//body/div[@id='indexsearch']/div[2]/div[1]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]");
+      
     }
   
     get btn_Done() {

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": ".//button[contains(., \"Price (lowest first)\") and not(.//button)]"
+}

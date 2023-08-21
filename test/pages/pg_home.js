@@ -1,10 +1,15 @@
 class PGHomePage {
   get btn_Country() {
-    return $('(//span[@class="cb5ebe3ffb"]/button)[2]');
+    // return $('(//span[@class="e4adce92df"]/button)[2]');
+    return $('//body[1]/div[2]/div[1]/header[1]/nav[1]/div[2]/span[2]/button[1]');
+    
+    
   }
 
   get btn_CloseRandomModal() {
-    return $('div[class="e5aa33035e"] button');
+    // return $('div[class="e5aa33035e"] button');
+    return $('button.a83ed08757.c21c56c305.f38b6daa18.d691166b09.ab98298258.deab83296e.f4552b6561');
+     
   }
 
   get btn_CountryUk() {

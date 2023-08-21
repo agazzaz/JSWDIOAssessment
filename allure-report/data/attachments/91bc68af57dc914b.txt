@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "div[class=\"e98c626f34\"] span[class=\"e615eb5e43\"]"
+}

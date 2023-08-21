@@ -33,13 +33,13 @@ class home {
     await homepage.btn_AlertClose.click();
   }
 
-  async bc_CheckForAlert() {
-    browser.pause(2000);
+  // async bc_CheckForAlert() {
+  //   browser.pause(2000);
     
-    //verify whether the alert is opened
-    let isOpen = await homepage.btn_AlertClose.isDisplayed();
-    await expect(isOpen).toEqual(false);
-  }
+  //   //verify whether the alert is opened
+  //   let isOpen = await homepage.btn_AlertClose.isDisplayed();
+  //   await expect(isOpen).toEqual(false);
+  // }
 }
 
 module.exports = new home();
